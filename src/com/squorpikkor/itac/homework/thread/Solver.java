@@ -18,6 +18,6 @@ public class Solver implements Runnable{
     @Override
     public void run() {
         System.out.println("Поток " + name + " считает...");
-        solution = 77 * 77 * 77 * 77;
+        solution = 77 * 77 * 77 * 77 * 8;
     }
 }
