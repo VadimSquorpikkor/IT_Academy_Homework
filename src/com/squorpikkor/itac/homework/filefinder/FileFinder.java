@@ -7,7 +7,7 @@ import java.io.File;
 public class FileFinder {
     public static void main(String[] args) throws InterruptedException {
         long sleepTime = 1000;
-        //int count = 0;
+
         String path = System.getProperty("user.dir") + File.separator + "src"+ File.separator +
                 "com"+ File.separator + "squorpikkor"+ File.separator + "itac"+ File.separator +
                 "homework"+ File.separator + "filefinder";
@@ -21,15 +21,12 @@ public class FileFinder {
 
         while (true) {
             thread.sleep(sleepTime);
-            /*System.out.println(count);
-            count++;*/
-            //System.out.println(f.listFiles().length);
 
             if (f.listFiles().length > count) {
-                System.out.println("Файлов стало больше!..");
+                System.out.println("Файлов стало больше!.. (" + f.listFiles().length + " шт.)");
                 count = f.listFiles().length;
             } else if (f.listFiles().length < count) {
-                System.out.println("И куда подевался файл?..");
+                System.out.println("И куда подевался файл?.. (" + f.listFiles().length + " шт.)");
                 count = f.listFiles().length;
             }
         }
