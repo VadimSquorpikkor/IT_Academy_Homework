@@ -6,7 +6,7 @@ public class Multiplex {
     public static void main(String[] args) throws InterruptedException {
         double formula1 = 2 + 2 * 2;
         double formula2 = 12 - 8;
-        double formula3 = 12 - 8;
+        //double formula3 = 12 - 8;
 
         Solver s1 = new Solver(formula1, "s1");
         Solver s2 = new Solver(formula2, "s2");
@@ -20,7 +20,7 @@ public class Multiplex {
         tr1.join();
         tr2.join();
 
-        System.out.println(s1.getSolution() * s2.getSolution());
+        System.out.println("Решение: " + s1.getSolution() * s2.getSolution());
     }
 
 }
