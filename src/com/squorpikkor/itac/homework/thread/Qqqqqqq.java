@@ -4,7 +4,8 @@ package com.squorpikkor.itac.homework.thread;
 
 public class Qqqqqqq {
     public static void main(String[] args) {
-        int s = 6 +4;
-        System.out.println(s);
+        String s = "5 + 1";
+        double d = Double.parseDouble(s);
+        System.out.println(d);
     }
 }
